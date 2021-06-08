@@ -29,15 +29,15 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title: "About",
-        name: "Human being"
+        name: "Shivansh Kumar"
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
         title: "Help",
-        name: "Human being",
-        message: "Well this is how it is"
+        name: "Shivansh Kumar",
+        message: "This is your help article"
     })
 })
 
@@ -75,7 +75,7 @@ app.get('/help/*',(req,res)=>{
     res.render('error',{
         title: "404",
         message: "Help article not found",
-        name: "Human Being"
+        name: "Shivansh Kumar"
     })
 })
 
@@ -83,7 +83,7 @@ app.get('*',(req,res)=>{
     res.render('error',{
         title: "404",
         message: "404 Page not found",
-        name: "Human Being"
+        name: "Shivansh Kumar"
     })
 })
 
